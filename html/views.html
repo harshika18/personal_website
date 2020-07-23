@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>HARSHIKA JAIN</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com.bootstrap/3.3.7/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="../css/views.css">
+</head>
+<body>
+    
+    <nav class="navbar navbar-inverse" id="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavBar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#"><img src="../img/init.jpeg" class="initial"></a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavBar">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="about.html">Home</a></li>
+                    <li><a href="interest.html">Interests</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li class="active"><a href="views.html">Views</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav> 
+<div id="pic1">
+    <img src="https://cdn.instructables.com/FDW/9DNA/FCHYO7E4/FDW9DNAFCHYO7E4.LARGE.jpg">
+</div>
+ <!---  <div class="bg-image"></div>--->
+    <div class="container-fluid formHolder">
+        <div class="row">
+            <div class="col-12 text-center">
+                <h1><b>Mention my skills </b></h1>
+            </div>
+        </div>
+        <form name="skillForm" method="POST" onsubmit="return validateForm()">
+            <div class="form-group row">
+                <label for="inputName" class="col-sm-2 col-form-label">Name</label>
+                <div class="col-sm-5">
+                    <input type="text" class="form-control" id="firstName" name="firstName" placeholder="Full name">
+                </div>
+                <div class="col-sm-5">
+                    <input type="text" class="form-control" id="lastName" name="lastName" placeholder="Last name">
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="inputSkill" class="col-sm-2 col-form-label">Skill</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" id="skillName" name="skillName" placeholder="Skill name">
+                </div>
+            </div>
+            <div class="form-group row">
+                <div class="col-sm-2 col-form-label">Level</div>
+                    <div class="col-sm-10">
+                        <div class="dropdown">
+                        <select class="form-control" id="level">
+                            <option value="" selected="selected" disabled hidden>Choose Level</option>
+                            <option value="Beginner">Beginner</option>
+                            <option value="Intermediate">Intermediate</option>
+                            <option value="Proficient">Proficient</option>
+                        </select>
+                    </div>
+                    </div>
+                </div>
+            <div class="form-group row">
+                <div class="text-right col-sm-12">
+                    <button type="submit" id="newE" class="btn btn-primary">Submit</button>
+                </div>
+            </div>
+        </form>
+    </div>
+    <div class="container">
+        <div class="table-responsive">
+            <table class="table">
+                <thead class="thead-dark">
+                    <tr>
+                        <th class="cen" colspan="4">YOUR COMMENTS</th>
+                    </tr>
+                    <tr>
+                        <th scope="col" class="text-center">Name</th>
+                        <th scope="col" class="text-center">Skill</th>
+                        <th scope="col" class="text-center">Level</th>
+                    </tr>
+                </thead>
+                <tbody id="toInsert">
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <div class="container counter" id="like">
+        <h2 id="likebutton">
+            Press the Like Button :&emsp; 
+        </h2>
+        <img src="http://healthwest.org.au/wp-content/uploads/2014/10/fb-like.jpg" width="100" height="70"  onclick="increaseLike(this)" id="likeB">
+        <h2 id="CounterH">
+            0
+        </h2>
+    </div>
+
+<a>
+    <script src="../js/form.js"></script>
+    <script type="text/javascript" src="../js/likes.js"></script>
+    <script type="text/javascript" src="../js/sticky.js"></script>
+</a>
+</body>
+
+</html>

@@ -1,0 +1,91 @@
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+.bg-image {
+  background-image: url("../img/my.jpeg");
+  
+  /* Add the blur effect */
+  filter: blur(3px);
+  -webkit-filter: blur(3px);
+  height: 100%; 
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Position text in the middle of the page/image */
+.bg-text {
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+  color: white;
+  font-weight: bold;
+  border: 3px solid #f1f1f1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 99999;
+  width: 80%;
+  padding: 20px;
+  text-align: center;
+}
+
+.navbar {
+  margin-bottom: 0;
+  border-radius: 0;
+  background-color: #000;
+  color: #000099;
+  padding: 1% 0;
+  font-size: 1.2em;
+  border: 0;
+}
+.initial {
+  max-height: 65px;
+  width: 150px;
+}
+.navbar-brand {
+  font: left;
+  min-height: 55px;
+  padding: 0 15px 5px;
+}
+.navbar-inverse .navbar-nav .active a, .navbar-inverse .navbar-nav .active a:focus, .navbar-inverse .navbar-nav .active a:hover {
+  color: #000;
+  background-color: #ffffff;
+}
+.navbar-inverse .navbar-nav li a {
+  color: #000099;
+}
+.container {
+  margin: 4% auto;  
+}
+
+#icon {
+	max-width: 200px;
+	margin: 1% auto; 
+}
+h1 {
+	color: #ffffff;
+}
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 99999;
+}
+
+@media (max-width: 600px)
+{
+  #icon {
+    max-width: 150px;
+  }
+  h1 {
+    font-size: 1.7px;
+    color: #ffffff;
+  }
+}
